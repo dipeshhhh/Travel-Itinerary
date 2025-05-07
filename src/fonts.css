@@ -1,0 +1,81 @@
+h1 {
+  font-family: Mont;
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 43px;
+  letter-spacing: 0%;
+}
+
+h2 {
+  font-family: Mont;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0%;
+}
+
+h3 {
+  font-family: Mont;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+
+.primary-button {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+
+.secondary-button {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0%;
+}
+
+.body-text-1 {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0%;
+}
+
+.body-text-2 {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+
+.body-text-3 {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0%;
+}
+
+.caption-text,
+.label-text {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0%;
+}
+
+.upcoming-trip-heading {
+  font-family: MODERNIZ;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}

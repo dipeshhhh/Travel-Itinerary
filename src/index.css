@@ -1,0 +1,17 @@
+/* font-family: 'Mont' */
+@import url("https://fonts.cdnfonts.com/css/mont");
+/* font-family: "Montserrat" */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* font-family: 'MODERNIZ' */
+@import url("https://fonts.cdnfonts.com/css/moderniz");
+
+:root {
+  font-family: Mont, Montserrat, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

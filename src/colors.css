@@ -1,0 +1,73 @@
+:root {
+  /* Primary */
+  --primary-blue: rgba(54, 67, 251, 1);
+  --primary-blue-faded: rgba(54, 67, 251, 0.3);
+  --primary-light-green: rgba(211, 244, 98, 1);
+  --primary-light-green-faded: rgba(209, 244, 98, 0.2);
+  --primary-green: rgba(156, 253, 104, 1);
+  --primary-red: rgba(255, 115, 57, 1);
+  --primary-yellow: rgba(254, 191, 76, 1);
+  --primary-deep-green: rgba(18, 106, 96, 1);
+  --primary-mint-green: rgba(188, 232, 183, 1);
+  --primary-lavender: rgba(191, 181, 255, 1);
+
+  /* Secondary */
+  --secondary-green: rgba(144, 235, 97, 1);
+  --secondary-red: rgba(255, 101, 37, 1);
+  --secondary-blue: rgba(49, 61, 223, 1);
+  --secondary-yellow: rgba(255, 178, 38, 1);
+  --secondary-dark-green: rgba(17, 68, 62, 1);
+
+  /* Background */
+  --background-dark: rgba(11, 8, 9, 1);
+  --background-light: rgba(253, 251, 247, 1);
+
+  /* Misc */
+  --accent-green: rgba(209, 244, 98, 1);
+  --text-white: rgba(245, 245, 245, 1);
+
+  /* Neutrals */
+  --gray-50: rgba(249, 249, 249, 1);
+  --gray-100: rgba(242, 242, 242, 1);
+  --gray-200: rgba(229, 229, 229, 1);
+  --gray-300: rgba(212, 212, 212, 1);
+  --gray-400: rgba(191, 191, 191, 1);
+  --gray-500: rgba(166, 166, 166, 1);
+  --gray-600: rgba(128, 128, 128, 1);
+  --gray-700: rgba(102, 102, 102, 1);
+  --gray-800: rgba(77, 77, 77, 1);
+  --gray-850: rgba(41, 41, 41, 1);
+  --gray-900: rgba(51, 51, 51, 1);
+}
+
+:root[data-theme="light"] {
+  --primary: var(--primary-blue);
+  --primary-faded: var(--primary-blue-faded);
+  --secondary: var(--secondary-green);
+  --secondary-2: var(--secondary-blue);
+  --text: var(--gray-900);
+  --text-faded: var(--gray-600);
+  /* text-2: for "Onboarding screen" text 
+  (since it is different than main dashboard's text color) */
+  --text-2: var(--background-dark);
+  --background: var(--background-light);
+  --surface: var(--background-light);
+  --surface-2: var(--background-light);
+  --surface-3: var(--gray-200);
+}
+
+:root[data-theme="dark"] {
+  --primary: var(--primary-light-green);
+  --primary-faded: var(--primary-light-green-faded);
+  --secondary: var(--secondary-green);
+  --secondary-2: var(--secondary-blue);
+  --text: var(--text-white);
+  --text-faded: var(--gray-600);
+  --text-2: var(--text-white);
+  --background: var(--background-dark);
+  --surface: var(--gray-800);
+  /* surface-2: Background for activities box */
+  --surface-2: var(--gray-900);
+  /* surface-3: Background for day+date box on activities */
+  --surface-3: var(--gray-850);
+}
