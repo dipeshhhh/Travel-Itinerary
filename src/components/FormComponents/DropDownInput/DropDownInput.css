@@ -1,0 +1,14 @@
+.form-select {
+  appearance: none;
+  cursor: pointer;
+}
+
+.drop-down-container {
+  position: relative;
+}
+
+.drop-down-select-icon {
+  position: absolute;
+  pointer-events: none;
+  right: var(--container-item-text-gap);
+}

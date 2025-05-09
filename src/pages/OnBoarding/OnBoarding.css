@@ -1,0 +1,64 @@
+.onboarding-main {
+  /* 
+  Top padding was 47px and bottom was 64px in figma.
+  But, it was around 20px in dashboard page.
+  So, I have set vertical padding to twice of page padding.
+  */
+  padding: calc(2 * var(--page-padding)) var(--page-padding);
+  display: flex;
+  flex-direction: column;
+  gap: var(--section-gap);
+
+  background-color: var(--background);
+  min-height: 100svh;
+}
+
+.onboarding-header {
+  display: flex;
+  flex-direction: column;
+  max-width: max-content;
+}
+
+.onboarding-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--container-gap);
+  flex-grow: 1;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--container-heading-gap);
+}
+
+.onboarding-radio-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--container-items-gap);
+}
+
+.form-empty-gap {
+  flex-grow: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  .onboarding-main {
+    background: linear-gradient(
+      160deg,
+      var(--primary-mint-green-soft) 0%,
+      var(--primary-lavender-soft) 100%
+    );
+  }
+  .onboarding-subheading {
+    align-self: center;
+  }
+
+  .onboard-input-icon-stroke {
+    stroke: var(--gray-700);
+  }
+
+  .onboard-input-icon-fill {
+    fill: var(--gray-700);
+  }
+}

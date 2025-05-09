@@ -1,0 +1,30 @@
+.form-input-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--container-item-text-gap);
+  padding: var(--container-item-text-gap);
+  border-radius: var(--common-border-radius);
+  background-color: var(--surface);
+}
+
+.form-text-input {
+  flex-grow: 1;
+  border: none;
+  background-color: transparent;
+}
+
+.form-text-input:focus {
+  outline: none;
+}
+
+.form-text-input::placeholder {
+  color: var(--text);
+}
+
+@media (prefers-color-scheme: light) {
+  .form-input-container {
+    background-color: transparent;
+    border: 1px solid var(--gray-400);
+  }
+}

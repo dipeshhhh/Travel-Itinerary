@@ -1,5 +1,23 @@
+/* font-family: 'Mont' */
+@import url("https://fonts.cdnfonts.com/css/mont");
+/* @import url('https://fonts.cdnfonts.com/css/mont?styles=21818,21819'); */
+
+/* font-family: "Mont SemiBold" */
+@import url("https://db.onlinewebfonts.com/c/303ff8c2975f30a5d6de8572b6b3fd15?family=Mont+SemiBold");
+
+/* font-family: "Mont Bold" */
+@import url("https://db.onlinewebfonts.com/c/f9808a8b4649251730a95cc8d10ad14b?family=Mont+Bold");
+
+/* font-family: "Montserrat" */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* font-family: 'MODERNIZ' */
+@import url("https://fonts.cdnfonts.com/css/moderniz");
+
 h1 {
-  font-family: Mont;
+  /* font-family: Mont; */
+  /* Using mont bold instead of mont with weight 800 (that was not available) */
+  font-family: Mont Bold;
   font-weight: 800;
   font-size: 34px;
   line-height: 43px;
@@ -7,15 +25,18 @@ h1 {
 }
 
 h2 {
-  font-family: Mont;
+  /* font-family: Mont; */
+  font-family: Mont Bold;
   font-weight: 800;
   font-size: 24px;
   line-height: 32px;
   letter-spacing: 0%;
-}
+} 
 
 h3 {
-  font-family: Mont;
+  /* font-family: Mont; */
+  /* Using mont semibold instead of mont with weight 700 (that was not available) */
+  font-family: Mont SemiBold;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -40,7 +61,7 @@ h3 {
 
 .body-text-1 {
   font-family: Montserrat;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0%;

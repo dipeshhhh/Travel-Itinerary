@@ -1,0 +1,17 @@
+.radio-select-input {
+  display: none;
+}
+
+.radio-select-text {
+  justify-content: center;
+  cursor: pointer;
+}
+
+.radio-select-input:checked + .radio-select-text {
+  outline: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+.radio-select-input:checked + .radio-select-text path {  
+  fill: var(--primary);
+}
