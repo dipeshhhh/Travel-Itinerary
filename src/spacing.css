@@ -1,7 +1,7 @@
 :root {
   --page-padding: 20px;
   --section-gap: 36px;
-  
+
   --container-gap: 28px;
   --container-heading-gap: 10px;
   --container-items-gap: 15px;
@@ -10,5 +10,5 @@
   --container-item-padding-y: 14px;
 
   --button-padding: 10px;
-  --common-border-radius: 8px
+  --common-border-radius: 8px;
 }

@@ -1,6 +1,6 @@
 import generateUID from "../../../utils/generateUID";
-import './RadioInput.css';
-import '../FormInput.css';
+import "./RadioInput.css";
+import "../FormInput.css";
 
 export default function RadioSelectInput({
   id = generateUID(), // This kinda makes it an impure function
@@ -8,13 +8,13 @@ export default function RadioSelectInput({
   value,
   icon, // Assuming icon to be an svg, maybe make them font
   text = "Item",
-  onChange = e => e
+  onChange = (e) => e,
 }) {
   return (
     <div>
       <input
-        type='radio'
-        className='radio-select-input'
+        type="radio"
+        className="radio-select-input"
         id={id}
         name={name}
         value={value}
@@ -23,12 +23,12 @@ export default function RadioSelectInput({
       />
       <label
         htmlFor={id}
-        className='radio-select-text body-text-1 form-input-container'
+        className="radio-select-text body-text-1 form-input-container"
         tabIndex={0}
       >
         {icon && icon}
         {text}
       </label>
     </div>
-  )
+  );
 }

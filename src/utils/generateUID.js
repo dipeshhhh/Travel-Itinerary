@@ -1,6 +1,7 @@
 export default function generateUID() {
-  let uid = '';
-  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  let uid = "";
+  const characters =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
   const currentDate = new Date();
 
   uid += currentDate.getTime();

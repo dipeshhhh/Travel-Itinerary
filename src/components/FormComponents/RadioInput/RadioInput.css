@@ -12,6 +12,6 @@
   color: var(--primary);
 }
 
-.radio-select-input:checked + .radio-select-text path {  
+.radio-select-input:checked + .radio-select-text path {
   fill: var(--primary);
 }
