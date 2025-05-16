@@ -1,0 +1,97 @@
+.dashboard-main {
+  display: flex;
+  flex-direction: column;
+  padding: var(--page-padding);
+  gap: var(--dashboard-section-gap);
+  /* background: linear-gradient(
+    -46deg,
+    rgba(254, 191, 76, 0.05) 0%,
+    rgba(191, 181, 255, 0.05) 100%
+  ); */
+  margin-bottom: var(--navbar-height);
+}
+
+.dashboard-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.user-avatar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: var(--primary-red);
+}
+
+.user-avatar-image {
+  aspect-ratio: 1 / 1;
+  height: 38px;
+  width: 38px;
+}
+
+/** For generating user avatar icon from user's initials (Directly using svg instead of this for now) */
+.user-avatar-from-initial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  gap: 10px;
+  padding-top: 10px;
+  /*! 2px extra for top padding to make it more close to center */
+
+  font-family: Mont SemiBold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 16px;
+  /* identical to box height, or 80% */
+  text-transform: uppercase;
+
+  background-color: var(--primary-red);
+  color: #ffffff;
+  aspect-ratio: 1 / 1;
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.dashboard-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--dashboard-container-gap);
+}
+
+.dashboard-section-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.accomodation-cards-container {
+  display: flex;
+  flex-direction: row;
+  gap: var(--dashboard-container-gap);
+  overflow-y: auto;
+
+  /** As per figma design */
+  margin: 0px calc(0px - var(--page-padding));
+  padding: 1px var(--page-padding);
+
+  /*! What I think looks good and consistent */
+  /* padding: 1px 0px;
+  padding-left: 1px; */
+
+  /* 1px vertical and left padding to accomodate for outline height of accomodation-cards on light mode */
+}

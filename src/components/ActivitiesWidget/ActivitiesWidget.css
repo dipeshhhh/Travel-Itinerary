@@ -1,0 +1,317 @@
+:root {
+  --activity-widget-gap: 24px;
+  --ac-calendar-gap: 8px;
+
+  --ac-vertical-padding: 12px;
+  --ac-horizontal-padding: 8px;
+}
+
+.activity-widget {
+  display: flex;
+  flex-direction: column;
+  gap: var(--activity-widget-gap);
+}
+
+.activity-calendar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 18px;
+  padding: var(--ac-vertical-padding) var(--ac-horizontal-padding);
+  border-radius: 12px;
+  background-color: var(--surface-2);
+}
+
+.ac-header {
+  display: flex;
+  flex-direction: row;
+  gap: var(--ac-calendar-gap);
+}
+.ac-header-item {
+  padding: var(--ac-calendar-gap);
+  border-radius: var(--common-border-radius);
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  /* identical to box height, or 100% */
+  display: flex;
+  align-items: center;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.ac-header .primary-item {
+  background-color: var(--primary);
+  color: var(--surface-2);
+}
+
+.ac-header .secondary-item {
+  border: 1px solid var(--primary);
+  background-color: var(--surface-3);
+  color: var(--primary);
+}
+
+.ac-date-item-container {
+  display: flex;
+  flex-direction: row;
+  gap: var(--ac-calendar-gap);
+  overflow-y: auto;
+  margin: 0px calc(0px - var(--ac-horizontal-padding));
+  padding: 1px var(--ac-horizontal-padding);
+
+  /* 1px padding on top and bottom to prevent UI height change on adding outline when a date item is selected */
+}
+
+.ac-date-item {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  border-radius: var(--common-border-radius);
+  background-color: var(--surface-3);
+  cursor: pointer;
+}
+
+.ac-date-item.selected {
+  outline: 1px solid var(--primary);
+}
+
+.ac-date-item-month {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8px;
+  color: var(--background);
+  background-color: var(--text-faded);
+  border-bottom-left-radius: var(--common-border-radius);
+  border-top-left-radius: var(--common-border-radius);
+
+  writing-mode: sideways-lr;
+  text-orientation: sideways;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  /* identical to box height, or 100% */
+  display: flex;
+  align-items: center;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.ac-date-item-month.selected {
+  background-color: var(--primary);
+}
+
+.ac-date-item-day-date-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: var(--ac-calendar-gap);
+  padding: 8px;
+  width: 46px;
+  color: var(--text-faded);
+}
+
+.ac-date-item-day-date-container.first-date {
+  align-items: start;
+  text-align: start;
+}
+.ac-date-item-day-date-container.selected {
+  color: var(--text);
+}
+
+.ac-date-item-day {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  /* identical to box height, or 100% */
+  display: flex;
+  align-items: center;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.ac-date-item-date {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 12px;
+  /* identical to box height, or 86% */
+  display: flex;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.activity-day-info-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 18px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  /* identical to box height, or 100% */
+  display: flex;
+  align-items: center;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.ad-day-date {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: var(--common-border-radius);
+  background-color: var(--primary);
+  padding: 4px;
+  color: var(--background);
+}
+
+.ad-activities {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--primary);
+}
+
+.activity-item-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--common-border-radius);
+  padding: 4px;
+  gap: 16px;
+}
+
+.activity-item {
+  display: grid;
+  grid-template-columns: 128px auto;
+  border-radius: var(--common-border-radius);
+  background-color: var(--surface);
+  align-items: center;
+  min-height: 128px;
+}
+
+.activity-item-image-section {
+  height: 100%;
+  width: 128px;
+  border-top-left-radius: var(--common-border-radius);
+  border-bottom-left-radius: var(--common-border-radius);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.activity-item-image {
+  height: 128px;
+}
+
+.activity-item-text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px 10px;
+  overflow: auto;
+  height: 100%;
+  border-top-right-radius: var(--common-border-radius);
+  border-bottom-right-radius: var(--common-border-radius);
+}
+
+.activity-item-name {
+  font-family: "Mont SemiBold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 15px;
+  /* or 107% */
+  display: flex;
+  align-items: center;
+}
+
+.activity-detail {
+  display: flex;
+  flex-direction: row;
+}
+
+.activity-detail-label {
+  font-family: "Mont SemiBold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 133% */
+  display: flex;
+  align-items: center;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.activity-detail-value {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 133% */
+  display: flex;
+  align-items: center;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .activity-item-container {
+    border: 1px solid var(--primary);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .activity-calendar {
+    border: 1px solid var(--gray-400);
+  }
+
+  .ac-header-item.secondary-item {
+    background-color: var(--background);
+  }
+
+  .ac-date-item.selected {
+    background-color: var(--background);
+  }
+
+  .ad-day-date {
+    color: var(--text-white);
+  }
+
+  .activity-item-text-section {
+    border: 1px solid var(--gray-400);
+    border-left: none;
+  }
+}

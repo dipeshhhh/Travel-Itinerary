@@ -1,0 +1,80 @@
+.flight-details-widget {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 14px 12px;
+  min-height: 130px;
+  background-color: var(--primary-blue);
+  border-radius: var(--widget-border-radius);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  color: var(--text-white);
+}
+
+.flight-details-widget::before {
+  position: absolute;
+  height: calc(100% - 12px);
+  width: calc(100% - 16px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: var(--widget-border-radius);
+  content: "";
+  z-index: -1;
+  pointer-events: none;
+  background-color: var(--secondary-blue);
+}
+
+.flight-details-widget::after {
+  content: "";
+  z-index: 0;
+  pointer-events: none;
+  background-image: url("../../assets/images/plane.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: matrix(-0.99, 0.16, 0.16, 0.99, 0, 0);
+  position: absolute;
+  right: -150px;
+  top: -32.5px;
+  width: 367.81px;
+  height: 318.53px;
+}
+
+.flight-details-header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.flight-details-heading {
+  font-family: "Mont SemiBold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  display: flex;
+  align-items: center;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.flight-details-link {
+  color: var(--primary-light-green);
+}
+
+.flight-location-code {
+  line-height: 16px;
+}
+
+.flight-details-location-container {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+}

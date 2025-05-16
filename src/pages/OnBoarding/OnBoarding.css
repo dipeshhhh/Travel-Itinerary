@@ -22,7 +22,7 @@
 .onboarding-form {
   display: flex;
   flex-direction: column;
-  gap: var(--container-gap);
+  gap: var(--form-gap);
   flex-grow: 1;
 }
 

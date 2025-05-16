@@ -1,0 +1,82 @@
+.gradient-blobs-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* or behind your content */
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(200px);
+  pointer-events: none;
+}
+
+/* Ellipse 1 */
+.ellipse-1 {
+  width: 228px;
+  height: 220px;
+  left: -73px;
+  top: -82px;
+  background: rgba(217, 217, 217, 0.4);
+}
+
+/* Ellipse 8 */
+.ellipse-8 {
+  width: 174px;
+  height: 168px;
+  left: -53px;
+  top: 157px;
+  background: #799df4;
+}
+
+/* Ellipse 2 */
+.ellipse-2 {
+  width: 324px;
+  height: 313px;
+  left: 197px;
+  top: 474px;
+  background: rgba(191, 181, 255, 0.2);
+}
+
+/* Ellipse 3 */
+.ellipse-3 {
+  width: 228px;
+  height: 220px;
+  left: -134px;
+  top: 798px;
+  background: rgba(191, 181, 255, 0.4);
+}
+
+/* Ellipse 4 */
+.ellipse-4 {
+  width: 394px;
+  height: 380px;
+  left: 324px;
+  top: 1146px;
+  background: rgba(217, 217, 217, 0.4);
+  filter: blur(300px);
+}
+
+/* Ellipse 5 */
+.ellipse-5 {
+  width: 324px;
+  height: 313px;
+  left: 195.64px;
+  top: 1674.99px;
+  background: rgba(191, 181, 255, 0.2);
+  transform: matrix(-0.89, -0.46, -0.46, 0.89, 0, 0);
+}
+
+/* Ellipse 6 */
+.ellipse-6 {
+  width: 228px;
+  height: 220px;
+  left: 429.73px;
+  top: 1939.62px;
+  background: rgba(191, 181, 255, 0.4);
+  transform: matrix(-0.89, -0.46, -0.46, 0.89, 0, 0);
+}

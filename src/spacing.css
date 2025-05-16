@@ -1,8 +1,10 @@
 :root {
   --page-padding: 20px;
   --section-gap: 36px;
+  --dashboard-section-gap: 32px;
 
-  --container-gap: 28px;
+  --form-gap: 28px;
+  --dashboard-container-gap: 16px;
   --container-heading-gap: 10px;
   --container-items-gap: 15px;
   --container-item-text-gap: 10px;
@@ -11,4 +13,7 @@
 
   --button-padding: 10px;
   --common-border-radius: 8px;
+  --widget-border-radius: 16px;
+
+  --navbar-height: 72px;
 }

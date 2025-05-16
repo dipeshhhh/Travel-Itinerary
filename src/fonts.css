@@ -100,3 +100,15 @@ h3 {
   letter-spacing: 0%;
   vertical-align: middle;
 }
+
+.see-all-link {
+  font-family: "Mont";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 10px;
+  line-height: 16px;
+  /* identical to box height, or 160% */
+  text-decoration-line: underline;
+  color: var(--primary);
+  cursor: pointer;
+}
