@@ -30,7 +30,7 @@
   content: "";
   z-index: 0;
   pointer-events: none;
-  background-image: url("../../assets/images/plane.png");
+  background-image: url("https://res.cloudinary.com/djqwbrus3/image/upload/v1747724814/plane_bhlxxm.png");
   background-size: contain;
   background-repeat: no-repeat;
   transform: matrix(-0.99, 0.16, 0.16, 0.99, 0, 0);
