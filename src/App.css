@@ -36,26 +36,11 @@
 
 .task-image {
   height: 400px;
-  opacity: 0;
-}
-
-.onboarding-image-container {
-  background-image: url("/src/assets/images/onboarding-light.png");
-}
-
-.dashboard-image-container {
-  background-image: url("/src/assets/images/dashboard-light.png");
 }
 
 @media (prefers-color-scheme: dark) {
   .task-image-container {
     box-shadow: 0px 0px 20px var(--gray-50);
-  }
-  .onboarding-image-container {
-    background-image: url("/src/assets/images/onboarding-dark.png");
-  }
-  .dashboard-image-container {
-    background-image: url("/src/assets/images/dashboard-dark.png");
   }
 }
 

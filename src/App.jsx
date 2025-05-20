@@ -1,8 +1,10 @@
 import { NavLink } from "react-router";
 import "./App.css";
 
-import onboardingImage from "./assets/images/onboarding-dark.png";
-import dashboardImage from "./assets/images/dashboard-dark.png";
+import onboardingImageLight from "./assets/images/onboarding-light.png";
+import onboardingImageDark from "./assets/images/onboarding-dark.png";
+import dashboardImageLight from "./assets/images/dashboard-light.png";
+import dashboardImageDark from "./assets/images/dashboard-dark.png";
 
 function App() {
   return (
@@ -15,7 +17,21 @@ function App() {
           to="/onboarding"
           className="onboarding-image-container task-image-container"
         >
-          <img className="task-image" src={onboardingImage} alt="Onboarding" />
+          <picture className="task-image">
+            <source
+              srcSet={onboardingImageLight}
+              media="(prefers-color-scheme: light)"
+            />
+            <source
+              srcSet={onboardingImageDark}
+              media="(prefers-color-scheme: dark)"
+            />
+            <img
+              className="task-image"
+              src={onboardingImageLight}
+              alt="Onboarding"
+            />
+          </picture>
         </NavLink>
       </section>
       <section className="app-section">
@@ -26,7 +42,21 @@ function App() {
           to="/dashboard"
           className="dashboard-image-container task-image-container"
         >
-          <img className="task-image" src={dashboardImage} alt="Dashboard" />
+          <picture className="task-image">
+            <source
+              srcSet={dashboardImageLight}
+              media="(prefers-color-scheme: light)"
+            />
+            <source
+              srcSet={dashboardImageDark}
+              media="(prefers-color-scheme: dark)"
+            />
+            <img
+              className="task-image"
+              src={dashboardImageLight}
+              alt="Onboarding"
+            />
+          </picture>
         </NavLink>
       </section>
     </main>
