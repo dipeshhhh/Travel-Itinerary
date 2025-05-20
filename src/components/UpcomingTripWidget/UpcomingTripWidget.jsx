@@ -36,17 +36,13 @@ export default function UpcomingTripSection({
 
   return (
     <div className="upcoming-trip-widget">
-      {/* Main background image (non-blurred) */}
-      <div
-        className="upcoming-trip-image"
-        style={{ backgroundImage: `url(${imageURL})` }}
-      />
-      {/* Blurred overlay */}
-      <div
-        className="upcoming-trip-blur"
-        style={{ backgroundImage: `url(${imageURL})` }}
-      />
-      {/* Content over image */}
+      {[1, 2].map((imgNo) => (
+        // first image is normal and second is blurred
+        <div
+          className={`upcoming-trip-${imgNo === 1 ? "image" : "blur"}`}
+          style={{ backgroundImage: `url(${imageURL})` }}
+        />
+      ))}
       <div className="upcoming-trip-content">
         <header className="upcoming-trip-header-container">
           <div className="upcoming-trip-header">

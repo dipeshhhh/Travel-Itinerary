@@ -1,12 +1,27 @@
 import { NavLink } from "react-router";
 import "./App.css";
-
-import onboardingImageLight from "./assets/images/onboarding-light.png";
-import onboardingImageDark from "./assets/images/onboarding-dark.png";
-import dashboardImageLight from "./assets/images/dashboard-light.png";
-import dashboardImageDark from "./assets/images/dashboard-dark.png";
+import { getCloudinaryImageURL } from "./utils/cloudinary";
 
 function App() {
+  const imageOptions = {
+    // height: "600", // in px
+  };
+  const onboardingImageLight = getCloudinaryImageURL({
+    publicId: "v1747724812/onboarding-light_qqq6a7.png",
+    ...imageOptions,
+  });
+  const onboardingImageDark = getCloudinaryImageURL({
+    publicId: "v1747724813/onboarding-dark_ini57n.png",
+    ...imageOptions,
+  });
+  const dashboardImageLight = getCloudinaryImageURL({
+    publicId: "v1747724812/dashboard-light_jfimwo.png",
+    ...imageOptions,
+  });
+  const dashboardImageDark = getCloudinaryImageURL({
+    publicId: "v1747724812/dashboard-dark_aqoutb.png",
+    ...imageOptions,
+  });
   return (
     <main className="app-main">
       <section className="app-section">

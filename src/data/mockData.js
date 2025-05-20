@@ -1,10 +1,31 @@
-import avatarImage from "../assets/images/avatar.png";
-import tokyoImage from "../assets/images/tokyo.png";
-import shinagawaPrinceHotelImage from "../assets/images/shinagawa.png";
-import mercureTokyoHotelImage from "../assets/images/mercure.png";
-import sensoJiImage from "../assets/images/senso_ji_temple.png";
-import tokyoSkyTreeImage from "../assets/images/tokyo_sky_tree.png";
-import kimonoWearingImage from "../assets/images/kimono.png";
+import { getCloudinaryImageURL } from "../utils/cloudinary";
+
+const avatarImage = getCloudinaryImageURL({
+  publicId: "v1747724811/avatar_s7abql.png",
+  height: 38,
+  width: 38,
+});
+
+const tokyoImage = getCloudinaryImageURL({
+  publicId: "v1747724819/tokyo_imqvdi.png",
+});
+
+const shinagawaPrinceHotelImage = getCloudinaryImageURL({
+  publicId: "v1747724813/shinagawa_xvt54m.png",
+});
+const mercureTokyoHotelImage = getCloudinaryImageURL({
+  publicId: "v1747724812/mercure_mbw4ea.png",
+});
+
+const sensoJiImage = getCloudinaryImageURL({
+  publicId: "v1747724812/senso_ji_temple_c4ssdp.png",
+});
+const tokyoSkyTreeImage = getCloudinaryImageURL({
+  publicId: "v1747724815/tokyo_sky_tree_pip8oa.png",
+});
+const kimonoWearingImage = getCloudinaryImageURL({
+  publicId: "v1747724818/kimono_t2iuei.png",
+});
 
 const mockData = {
   user: {
